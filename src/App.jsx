@@ -9,7 +9,7 @@ import Footer from './components/Footer';
 import Testimonials from './components/Testimonials';
 import Gallery from './components/Gallery';
 import Prices from './components/Prices';
-
+import ForMenWomenSection from './components/ForMenWomenSection';
 
 
 function App() {
@@ -19,6 +19,7 @@ function App() {
     <>
      <div className="font-sans overflow-x-hidden scroll-smooth">
       <HeaderSection />
+      <ForMenWomenSection/>
       <Services />
       <BookingForm />
       <Prices />
