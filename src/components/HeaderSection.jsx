@@ -1,6 +1,6 @@
 import React from 'react';
-import headerLogo from './images/header-logo.png';
-import backgroundImage from './images/bg-1.jpg';
+import headerLogo from '../assets/images/header-logo.png';
+import backgroundImage from '../assets/images/bg-1.jpg';
 
 const HeaderSection = () => {
   return (

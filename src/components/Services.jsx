@@ -1,8 +1,8 @@
 import React from 'react';
-import menHair from './images/men-hair.png';
-import beard from './images/beard.png';
-import makeup from './images/beauty-products.png';
-import lifestyle from './images/lifestyle.png';
+import menHair from '../assets/images/men-hair.png';
+import beard from '../assets/images/beard.png';
+import makeup from '../assets/images/beauty-products.png';
+import lifestyle from '../assets/images/lifestyle.png';
 
 const services = [
   {

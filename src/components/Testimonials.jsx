@@ -1,8 +1,16 @@
 
 import React from 'react';
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel/dist/assets/owl.theme.default.css';
-import OwlCarousel from 'react-owl-carousel';
+// import 'owl.carousel/dist/assets/owl.carousel.css';
+// import 'owl.carousel/dist/assets/owl.theme.default.css';
+// import OwlCarousel from 'react-owl-carousel';
+
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+
+
+
+
 
 const testimonials = [
   {
@@ -23,7 +31,25 @@ const testimonials = [
   },
 ];
 
+
+
+
+
 const TestimonialSection = () => {
+
+const settings = {
+    dots: true,
+    infinite: true,
+    speed: 600,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    arrows: true,
+  };
+
+
+
   return (
     <section className="py-16 bg-white text-gray-800">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -35,16 +61,8 @@ const TestimonialSection = () => {
           <h4 className="text-[#bf925b] text-lg font-semibold mb-2">Testimony</h4>
           <h2 className="text-4xl font-bold mb-6">Happy Customer</h2>
 
-          <OwlCarousel
-            className="owl-theme"
-            items={1}
-            loop
-            margin={10}
-            nav
-            dots
-            autoplay
-            autoplayTimeout={5000}
-          >
+       
+           <Slider {...settings}>
             {testimonials.map((t, i) => (
               <div key={i} className="text-left bg-[#f5f2ea] p-6 rounded-lg shadow">
                 <div className="flex justify-center mb-4">
@@ -62,7 +80,7 @@ const TestimonialSection = () => {
                 </div>
               </div>
             ))}
-          </OwlCarousel>
+          </Slider>
         </div>
       </div>
     </section>
