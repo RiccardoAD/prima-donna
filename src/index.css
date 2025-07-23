@@ -1,3 +1,4 @@
+/* @import "tailwindcss"; */
 * {
     margin: 0px;
     padding: 0px;
@@ -10,6 +11,7 @@ html{
 body {
     overflow-x: hidden;
 }
+
 
 .nav-link {
     font-size: 22px;
